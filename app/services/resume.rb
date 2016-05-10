@@ -117,6 +117,28 @@ module Resume
           },
           description: 'Freelance developers marketplace, promoting team recruitment. Contractor can browse profiles or use the team builder engine, a genetic algorithm that weighs a budget and a given set of skills, to find the best fit. My main responsibilities were the implementation of controllers and models as well as integration testing. Pair programming was paramount in the completion of this project.'
         }
+      ],
+      experience: [
+        {
+          header: 'Production Manager, Global Ends, Murcia, Spain',
+          date: '09/2014 -­ 04/2015',
+          description: 'Production scheduling in an easy­open lids factory'
+        },
+        {
+          header: 'Construct 2 Mobile Game Programming, Freelance',
+          date: '01/2014 ­- 09/2014',
+          description: 'www.mirthfulstudios.com'
+        },
+        {
+          header: 'SAP Consultant, Capgemini, Valencia, Spain',
+          date: '07/2013 -­ 01/2014',
+          description: 'Design & Implementation of production planning related SAP solutions'
+        },
+        {
+          header: 'Representative, Marfa Tessile SL, Hangzhou, China',
+          date: '08/2011 ­- 02/2012',
+          description: 'Textile industry. Regional accounting and business relationships'
+        }
       ]
     }
 

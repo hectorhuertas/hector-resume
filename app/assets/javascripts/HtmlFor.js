@@ -101,11 +101,36 @@ var HtmlFor = (function() {
     }, "");
   };
 
+
+  var experience = function (experience) {
+    return  '<section id="experience" class="row">' +
+              sectionTitle('experience') +
+              '<div class="col-xs-9 content">' +
+                // codeList(experience) +
+              '</div>' +
+            '</section>';
+  };
+
+  // var codeList = function (projects) {
+  //   return projects.reduce(function(prev, curr) {
+  //     return prev +
+  //       '<div class="project">' +
+  //         '<span>' +
+  //           '<span class="project-title">' + curr.title + '</span> - ' +
+  //           '<a href="' + curr.production.href + '">' + curr.production.text + '</a> - ' +
+  //           '<a href="' + curr.github.href + '">' + curr.github.text + '</a>' +
+  //         '</span>' +
+  //         '<p>' + curr.description + '</p>' +
+  //       '</div>';
+  //   }, "");
+  // };
+
   return {
     title: title,
     contact: contact,
     about: about,
     skills: skills,
-    code: code
+    code: code,
+    experience: experience
   };
 })();
