@@ -92,6 +92,30 @@ module Resume
             text: 'GitHub'
           },
           description: 'City analyst that finds the best locations for a new business. Using population and business data, it provides a geographic analysis of the less saturated neighborhoods. Built on JS and Rails, uses OAuth, Sidekiq, Redis, VCR and Yelp’s and Google Map’s API. A background worker does all the analysis and saves to the cache, so load times are always very fast.'
+        },
+        {
+          title: 'Snake Tron',
+          production: {
+            href: 'http://hectorhuertas.github.io/snake-tron/',
+            text: 'hectorhuertas.github.io/snake-tron'
+          },
+          github: {
+            href: 'https://github.com/hectorhuertas/game-time',
+            text: 'GitHub'
+          },
+          description: 'Snake and Tron crossover built on JavaScript. Features well organized code, performant collision detection and an optional AI for the second player. I was responsible for the collision detection, unit testing and AI.'
+        },
+        {
+          title: 'Hire My Tribe',
+          production: {
+            href: 'http://hiremytribe.herokuapp.com/',
+            text: 'hiremytribe.herokuapp.com'
+          },
+          github: {
+            href: 'https://github.com/stevepentler/Hire-My-Tribe',
+            text: 'GitHub'
+          },
+          description: 'Freelance developers marketplace, promoting team recruitment. Contractor can browse profiles or use the team builder engine, a genetic algorithm that weighs a budget and a given set of skills, to find the best fit. My main responsibilities were the implementation of controllers and models as well as integration testing. Pair programming was paramount in the completion of this project.'
         }
       ]
     }
