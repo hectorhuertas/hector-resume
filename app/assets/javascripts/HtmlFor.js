@@ -53,9 +53,23 @@ var HtmlFor = (function() {
             '</section>';
   };
 
+  var skills = function (skills) {
+    return  '<section id="skills" class="row">' +
+              sectionTitle('skills') +
+              '<div class="col-xs-9 content">' +
+                '<div class="row">' +
+                  '<div class="col-xs-12">' +
+                    JSON.stringify(skills);+
+                  '</div>' +
+                '</div>' +
+              '</div>' +
+            '</section>';
+  };
+
   return {
     title: title,
     contact: contact,
-    about: about
+    about: about,
+    skills: skills
   };
 })();

@@ -24,7 +24,29 @@ module Resume
       },
       about: {
         content: 'I am a web developer with an engineering background. Studying and working around the world reinforced my communication and problem solving skills. I am an avid learner that loves challenges and am always seeking to improve the quality of my work. Always ready, I come equipped with a relentlessly positive attitude.'
-      }
+      },
+      skills: [
+        {
+          type: 'Languages',
+          list: [
+            'JavaScript',
+            'Ruby 2.X',
+            'HTML5',
+            'CSS3',
+            'Elixir 1.X'
+          ]
+        },
+        {
+          type: 'Frameworks',
+          list: [
+            'Rails 4.X,',
+            'Node.js',
+            'Sinatra',
+            'Bootstrap'
+          ]
+        },
+
+      ]
     }
 
   end
