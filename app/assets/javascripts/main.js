@@ -1,8 +1,4 @@
 $(document).ready(function(){
   $.get('/api/v1/resume')
-   .then(renderResume);
+   .then(Render.resume);
 });
-
-function renderResume(resume) {
-  $('h1').text(resume.name);
-}
