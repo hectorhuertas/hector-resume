@@ -4,9 +4,7 @@ $(document).ready(function(){
 });
 
 function renderResume(resume) {
-  console.log(resume);
-  $('h1').text(resume.title.name);
-  var resume_html = ""
-
-  $('body').append(resume_html)
+  var resume_html = HtmlFor['title'](resume.title);
+  var resume_html = resume_html + HtmlFor['contact'](resume.contact);
+  $('body').append(resume_html);
 }
