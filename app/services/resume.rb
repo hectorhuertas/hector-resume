@@ -127,7 +127,7 @@ module Resume
         {
           header: 'Construct 2 Mobile Game Programming, Freelance',
           date: '01/2014 ­- 09/2014',
-          description: 'www.mirthfulstudios.com'
+          description: 'Founder & Programmer at mirthfulstudios.com'
         },
         {
           header: 'SAP Consultant, Capgemini, Valencia, Spain',
