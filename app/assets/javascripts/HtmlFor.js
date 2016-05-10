@@ -36,9 +36,24 @@ var HtmlFor = (function() {
     return contacts_html;
   };
 
+  var about = function (about) {
+    return  '<section id="contact" class="row">' +
+              '<div class="col-xs-2 text-xs-right title">' +
+                '<h6>ABOUT</h6>' +
+              '</div>' +
+              '<div class="col-xs-9 content">' +
+                '<div class="row">' +
+                  '<div class="col-xs-12">' +
+                    about.content +
+                  '</div>' +
+                '</div>' +
+              '</div>' +
+            '</section>';
+  };
 
   return {
     title: title,
-    contact: contact
+    contact: contact,
+    about: about
   };
 })();
