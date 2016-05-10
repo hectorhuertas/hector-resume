@@ -79,6 +79,20 @@ module Resume
             'Elm'
           ]
         },
+      ],
+      code: [
+        {
+          title: 'Business Placer',
+          production: {
+            href: 'https://business-placer.herokuapp.com/',
+            text: 'business­placer.herokuapp.com'
+          },
+          github: {
+            href: 'https://github.com/hectorhuertas/business_placer',
+            text: 'GitHub'
+          },
+          description: 'City analyst that finds the best locations for a new business. Using population and business data, it provides a geographic analysis of the less saturated neighborhoods. Built on JS and Rails, uses OAuth, Sidekiq, Redis, VCR and Yelp’s and Google Map’s API. A background worker does all the analysis and saves to the cache, so load times are always very fast.'
+        }
       ]
     }
 
