@@ -6,7 +6,7 @@ var Render = (function () {
       resume_html = resume_html + HtmlFor[section](resume[section]);
     }
 
-    $('#content').replaceWith(resume_html);
+    $('#content').empty().append(resume_html);
   };
 
   return {
