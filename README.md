@@ -1,3 +1,17 @@
+# Hector Resume
+
+## Deployment
+
+  1. `$ bundle install`
+
+  2. `$ rake db:create`
+
+  3. `$ rails server`
+
+
+
+
+
 == README
 
 This README would normally document whatever steps are necessary to get the
