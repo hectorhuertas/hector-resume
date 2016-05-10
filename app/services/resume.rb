@@ -139,8 +139,24 @@ module Resume
           date: '08/2011 ­- 02/2012',
           description: 'Textile industry. Regional accounting and business relationships'
         }
+      ],
+      education: [
+        {
+          header: 'Turing School of Software & Design at Denver, USA',
+          date: '10/2015 ­- 04/2016',
+          description: 'Certificate in Web Application Development with JavaScript, Ruby and Rails'
+        },
+        {
+          header: 'Universidad Politécnica de Valencia at Valencia, Spain',
+          date: '10/2008 -­ 05/2013',
+          description: 'Master’s in Industrial Management Engineering'
+        },
+        {
+          header: 'Universidad Politécnica de Valencia at Valencia, Spain',
+          date: '10/2004 ­- 09/2008',
+          description: 'Bachelor’s in Mechanical Engineering'
+        },
       ]
     }
-
   end
 end

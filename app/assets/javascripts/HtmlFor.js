@@ -77,7 +77,6 @@ var HtmlFor = (function() {
     }, "");
   };
 
-
   var code = function (code) {
     return  '<section id="code" class="row">' +
               sectionTitle('code') +
@@ -100,7 +99,6 @@ var HtmlFor = (function() {
         '</div>';
     }, "");
   };
-
 
   var experience = function (experience) {
     return  '<section id="experience" class="row">' +
@@ -130,12 +128,41 @@ var HtmlFor = (function() {
     }, "");
   };
 
+  var education = function (education) {
+    return  '<section id="education" class="row">' +
+              sectionTitle('education') +
+              '<div class="col-xs-9 content">' +
+                educationList(education) +
+              '</div>' +
+            '</section>';
+  };
+
+  var educationList = function (educations) {
+    return educations.reduce(function(prev, curr) {
+      return prev +
+        '<div class="row important-data">' +
+          '<div class="col-xs-9">' +
+            '<span>' + curr.header + '</span>' +
+          '</div>' +
+          '<div class="col-xs-3 text-xs-right">' +
+            '<span>' + curr.date + '</span>' +
+          '</div>' +
+        '</div>' +
+        '<div class="row">' +
+          '<div class="col-xs-10 col-xs-offset-1">' +
+            '<span>' + curr.description + '</span>' +
+          '</div>' +
+        '</div>';
+    }, "");
+  };
+
   return {
     title: title,
     contact: contact,
     about: about,
     skills: skills,
     code: code,
-    experience: experience
+    experience: experience,
+    education: education
   };
 })();
