@@ -59,11 +59,25 @@ var HtmlFor = (function() {
               '<div class="col-xs-9 content">' +
                 '<div class="row">' +
                   '<div class="col-xs-12">' +
-                    JSON.stringify(skills);+
+                    skillList(skills) +
                   '</div>' +
                 '</div>' +
               '</div>' +
             '</section>';
+  };
+
+  var skillList = function (skills) {
+    return skills.reduce(function(prev, curr) {
+      return prev +
+        '<div class="row">' +
+          '<div class="col-xs-2">' +
+            '<span>' + curr.type + ':</span>' +
+          '</div>' +
+          '<div class="col-xs-10">' +
+            '<span>' + curr.list.join(', ') + '</span>' +
+          '</div>' +
+        '</div>';
+    }, "");
   };
 
   return {

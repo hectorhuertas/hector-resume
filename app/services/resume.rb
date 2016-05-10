@@ -39,7 +39,7 @@ module Resume
         {
           type: 'Frameworks',
           list: [
-            'Rails 4.X,',
+            'Rails 4.X',
             'Node.js',
             'Sinatra',
             'Bootstrap'
