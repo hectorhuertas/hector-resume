@@ -20,24 +20,21 @@ var HtmlFor = (function() {
               sectionTitle("contact") +
               '<div class="col-xs-9 content">' +
                 '<div class="row">' +
-                  contacts(contact) +
+                  contactList(contact) +
                 '</div>' +
               '</div>' +
             '</section>';
   };
 
-  var contacts = function (contacts) {
-    var contacts_html = '';
-
-    for (var contact in contacts) {
-      contacts_html = contacts_html +
+  var contactList = function (contacts) {
+    return contacts.reduce(function (prev, curr) {
+      return prev +
         '<div class="col-xs-6">' +
-          '<a href="' + contacts[contact].href + '">' +
-            contacts[contact].content +
+          '<a href="' + curr.href + '">' +
+            curr.content +
           '</a>' +
         '</div>';
-    }
-    return contacts_html;
+    }, "");
   };
 
   var about = function (about) {
