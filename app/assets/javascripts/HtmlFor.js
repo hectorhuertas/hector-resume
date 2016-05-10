@@ -106,24 +106,29 @@ var HtmlFor = (function() {
     return  '<section id="experience" class="row">' +
               sectionTitle('experience') +
               '<div class="col-xs-9 content">' +
-                // codeList(experience) +
+                experienceList(experience) +
               '</div>' +
             '</section>';
   };
 
-  // var codeList = function (projects) {
-  //   return projects.reduce(function(prev, curr) {
-  //     return prev +
-  //       '<div class="project">' +
-  //         '<span>' +
-  //           '<span class="project-title">' + curr.title + '</span> - ' +
-  //           '<a href="' + curr.production.href + '">' + curr.production.text + '</a> - ' +
-  //           '<a href="' + curr.github.href + '">' + curr.github.text + '</a>' +
-  //         '</span>' +
-  //         '<p>' + curr.description + '</p>' +
-  //       '</div>';
-  //   }, "");
-  // };
+  var experienceList = function (experiences) {
+    return experiences.reduce(function(prev, curr) {
+      return prev +
+        '<div class="row data">' +
+          '<div class="col-xs-9">' +
+            '<span>' + curr.header + '</span>' +
+          '</div>' +
+          '<div class="col-xs-3 text-xs-right">' +
+            '<span>' + curr.date + '</span>' +
+          '</div>' +
+        '</div>' +
+        '<div class="row">' +
+          '<div class="col-xs-10 col-xs-offset-1">' +
+            '<span>' + curr.description + '</span>' +
+          '</div>' +
+        '</div>';
+    }, "");
+  };
 
   return {
     title: title,
