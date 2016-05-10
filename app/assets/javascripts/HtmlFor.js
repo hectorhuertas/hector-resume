@@ -9,11 +9,15 @@ var HtmlFor = (function() {
             '</section>';
   };
 
+  var sectionTitle = function (title) {
+    return  '<div class="col-xs-2 text-xs-right title">' +
+              '<h6>' + title.toUpperCase() + '</h6>' +
+            '</div>';
+  };
+
   var contact = function (contact) {
     return  '<section id="contact" class="row">' +
-              '<div class="col-xs-2 text-xs-right title">' +
-                '<h6>CONTACT</h6>' +
-              '</div>' +
+              sectionTitle("contact") +
               '<div class="col-xs-9 content">' +
                 '<div class="row">' +
                   contacts(contact) +
@@ -37,10 +41,8 @@ var HtmlFor = (function() {
   };
 
   var about = function (about) {
-    return  '<section id="contact" class="row">' +
-              '<div class="col-xs-2 text-xs-right title">' +
-                '<h6>ABOUT</h6>' +
-              '</div>' +
+    return  '<section id="about" class="row">' +
+              sectionTitle('about') +
               '<div class="col-xs-9 content">' +
                 '<div class="row">' +
                   '<div class="col-xs-12">' +
