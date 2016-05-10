@@ -45,7 +45,40 @@ module Resume
             'Bootstrap'
           ]
         },
-
+        {
+          type: 'Testing',
+          list: [
+            'BDD/TDD',
+            'RSpec',
+            'MiniTest',
+            'VCR',
+            'Capybara',
+            'Selenium',
+            'Mocha',
+            'PhantomJS'
+          ]
+        },
+        {
+          type: 'Tools',
+          list: [
+            'Git',
+            'PostgreSQL',
+            'Redis',
+            'Sidekiq',
+            'Pair Programming',
+            'Agile'
+          ]
+        },
+        {
+          type: 'Interests',
+          list: [
+            'Phoenix',
+            'Ember',
+            'React',
+            'UX Design',
+            'Elm'
+          ]
+        },
       ]
     }
 
