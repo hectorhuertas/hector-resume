@@ -77,10 +77,35 @@ var HtmlFor = (function() {
     }, "");
   };
 
+
+  var code = function (code) {
+    return  '<section id="code" class="row">' +
+              sectionTitle('code') +
+              '<div class="col-xs-9 content">' +
+                codeList(code) +
+              '</div>' +
+            '</section>';
+  };
+
+  var codeList = function (projects) {
+    return projects.reduce(function(prev, curr) {
+      return prev +
+        '<div class="project">' +
+          '<span>' +
+            '<span class="project-title">' + curr.title + '</span> - ' +
+            '<a href="' + curr.production.href + '">' + curr.production.text + '</a> - ' +
+            '<a href="' + curr.github.href + '">' + curr.github.text + '</a>' +
+          '</span>' +
+          '<p>' + curr.description + '</p>' +
+        '</div>';
+    }, "");
+  };
+
   return {
     title: title,
     contact: contact,
     about: about,
-    skills: skills
+    skills: skills,
+    code: code
   };
 })();
