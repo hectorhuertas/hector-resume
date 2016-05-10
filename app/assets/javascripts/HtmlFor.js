@@ -114,7 +114,7 @@ var HtmlFor = (function() {
   var experienceList = function (experiences) {
     return experiences.reduce(function(prev, curr) {
       return prev +
-        '<div class="row data">' +
+        '<div class="row important-data">' +
           '<div class="col-xs-9">' +
             '<span>' + curr.header + '</span>' +
           '</div>' +
