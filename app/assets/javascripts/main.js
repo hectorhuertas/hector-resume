@@ -4,7 +4,11 @@ $(document).ready(function(){
 });
 
 function renderResume(resume) {
-  var resume_html = HtmlFor['title'](resume.title);
-  var resume_html = resume_html + HtmlFor['contact'](resume.contact);
+  var resume_html = '';
+
+  for (var section in resume) {
+    resume_html = resume_html + HtmlFor[section](resume[section]);
+  }
+
   $('body').append(resume_html);
 }
