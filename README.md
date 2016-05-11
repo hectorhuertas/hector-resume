@@ -1,6 +1,18 @@
-# Hector Resume
+# Hector Huertas Resume
+
+Author: Hector Huertas
+
+[Live on Heroku](https://hector-resume.herokuapp.com/)
+
+[JSON Resume](https://hector-resume.herokuapp.com/api/v1/resume)
+
+## Overview
+
+This is an special html version of my resume. Instead of being a static page, the resume is rendered by loading a JSON version of the resume through an AJAX call. Once the JSON resume is recovered, it is parsed an appended to the html with jQuery.
 
 ## Deployment
+
+To run a local version of the website run the following commands:
 
   1. `$ bundle install`
 
@@ -8,35 +20,4 @@
 
   3. `$ rails server`
 
-
-
-
-
-== README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Now you could access the HTML resume at `http://localhost:3000/` and the resume JSON at `http://localhost:3000/api/v1/resume`
