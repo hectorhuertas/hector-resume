@@ -2,9 +2,7 @@ var HtmlFor = (function() {
   var title = function (title) {
     return  '<section id="title" class="row">' +
               '<div class="col-xs-12">' +
-                '<h1 class="display-1 text-xs-center">' +
-                  title.name +
-                '</h1>' +
+                '<h1 class="display-1 text-xs-center">' + title.name + '</h1>' +
               '</div>' +
             '</section>';
   };
@@ -15,13 +13,15 @@ var HtmlFor = (function() {
             '</div>';
   };
 
+  var linkTo = function (text, href) {
+    return '<a href="' + href + '">' + text + '</a>';
+  };
+
   var contact = function (contact) {
     return  '<section id="contact" class="row">' +
               sectionTitle("contact") +
               '<div class="col-xs-9 content">' +
-                '<div class="row">' +
-                  contactList(contact) +
-                '</div>' +
+                '<div class="row">' + contactList(contact) + '</div>' +
               '</div>' +
             '</section>';
   };
@@ -29,11 +29,7 @@ var HtmlFor = (function() {
   var contactList = function (contacts) {
     return contacts.reduce(function (prev, curr) {
       return prev +
-        '<div class="col-xs-6">' +
-          '<a href="' + curr.href + '">' +
-            curr.content +
-          '</a>' +
-        '</div>';
+        '<div class="col-xs-6">' + linkTo(curr.text, curr.href) + '</div>';
     }, "");
   };
 
@@ -42,9 +38,7 @@ var HtmlFor = (function() {
               sectionTitle('about') +
               '<div class="col-xs-9 content">' +
                 '<div class="row">' +
-                  '<div class="col-xs-12">' +
-                    about.content +
-                  '</div>' +
+                  '<div class="col-xs-12">' + about.content + '</div>' +
                 '</div>' +
               '</div>' +
             '</section>';
@@ -55,9 +49,7 @@ var HtmlFor = (function() {
               sectionTitle('skills') +
               '<div class="col-xs-9 content">' +
                 '<div class="row">' +
-                  '<div class="col-xs-12">' +
-                    skillList(skills) +
-                  '</div>' +
+                  '<div class="col-xs-12">' + skillList(skills) + '</div>' +
                 '</div>' +
               '</div>' +
             '</section>';
@@ -80,9 +72,7 @@ var HtmlFor = (function() {
   var code = function (code) {
     return  '<section id="code" class="row">' +
               sectionTitle('code') +
-              '<div class="col-xs-9 content">' +
-                codeList(code) +
-              '</div>' +
+              '<div class="col-xs-9 content">' + codeList(code) + '</div>' +
             '</section>';
   };
 
@@ -92,8 +82,8 @@ var HtmlFor = (function() {
         '<div class="project">' +
           '<span>' +
             '<span class="project-title">' + curr.title + '</span> - ' +
-            '<a href="' + curr.production.href + '">' + curr.production.text + '</a> - ' +
-            '<a href="' + curr.github.href + '">' + curr.github.text + '</a>' +
+            linkTo(curr.production.text, curr.production.href) + ' - ' +
+            linkTo(curr.github.text, curr.github.href) +
           '</span>' +
           '<p>' + curr.description + '</p>' +
         '</div>';
