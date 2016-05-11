@@ -6,19 +6,19 @@ module Resume
       },
       contact: [
         {
-          content: 'hectorhuertas@gmail.com',
+          text: 'hectorhuertas@gmail.com',
           href: 'mailto:hectorhuertas@gmail.com'
         },
         {
-          content: 'github.com/hectorhuertas',
+          text: 'github.com/hectorhuertas',
           href: 'https://github.com/hectorhuertas'
         },
         {
-          content: 'linkedin.com/in/ingenierohectorhuertas/en',
+          text: 'linkedin.com/in/ingenierohectorhuertas/en',
           href: 'https://www.linkedin.com/in/ingenierohectorhuertas/en'
         },
         {
-          content: '+34 635327507',
+          text: '+34 635327507',
           href: 'tel:0034635327507'
         }
       ],
